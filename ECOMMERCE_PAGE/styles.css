@@ -1,0 +1,359 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Optional: Style active link */
+.nav-links a.active {
+    font-weight: bold;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: end;
+}
+
+.account-icon,
+.search-icon,
+.love-icon {
+    margin-left: 20px;
+    text-align: end;
+    justify-content: end;
+
+}
+/* Adjust icon size */
+.icons i {
+    font-size: 20px;
+    color: black;
+}
+
+.category-bar {
+    background-color: #dad7d7;
+    padding: 10px 0;
+    text-align: center;
+    align-items: start;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.category-bar li:last-child {
+    margin-right: 0;
+}
+
+.category-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.category-bar a:hover {
+    color: #555;
+}
+
+
+
+.cart-container {
+    background-color: rgb(9, 255, 0);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.overlay-link {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.overlay-link:hover {
+    background-color: white;
+    color: black;
+}
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.controls button i {
+    font-size: 24px;
+}
+/* Style the form container */
+.form-container {
+    text-align: center; /* Align contents horizontally */
+    margin-top: 50px; 
+    background-color: #dad7d7;/* Adjust top margin to center vertically */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(228, 227, 227);
+}
+
+#cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: fit-content;
+    height: 80%;
+}
+
+/* Styling for the grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-container2 {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.grid-container2 ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0; 
+}
+
+.grid-container2 ul li {
+    margin-bottom: 5px; 
+}
+
+.grid-item {
+    margin: 0;
+}
+.grid-item2 {
+    margin: 0;
+    background-color: #dad7d7;
+}
+ /* Styling for the image container */
+ .image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Styling for the image */
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  /* Styling for sections */
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  .centered-text {
+    text-align: center;
+}
+/* Styling for footer */
+footer {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+}
+
+.icon {
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the buttons container */
+.button-container {
+    display: flex; 
+}
+
+/* Style for the "Add to Cart" button */
+.addToCartButton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style for the "Add to Favorites" button */
+.addToFavoritesButton {
+    background-color: transparent; 
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.addToFavoritesButton i {
+    font-size: 25px; 
+}
+
+.addToFavoritesButton.favoriteActive {
+    background-color: transparent; 
+    color: red; 
+}
+.search-bar {
+    width: 100%; 
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.search-field {
+    width: 88%;
+    padding: 8px; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.search-button {
+    width: 10%; 
+    padding: 8px; 
+    border: none;
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+
+

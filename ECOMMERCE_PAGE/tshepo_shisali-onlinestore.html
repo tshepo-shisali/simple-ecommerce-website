@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="tshepo_shisali-onlinestore.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+        <h1 class="title">HYPER TECH</h1>
+
+        <nav class="navbar">
+            <div class="icons">
+                <a href="account.html" class="account-icon"><i class="fas fa-user"></i></a>
+                <a href="search.html" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="love-icon"><i class="fas fa-heart"></i></a>
+            </div>
+        </nav> 
+    </div>
+    
+    
+    <div class="video-container">
+        <video id="myVideo" loop autoplay muted>
+            <source src="images/asusvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h2 class="overlay-text">Trending Now</h2>
+            <a href="#grids2" class="overlay-link">Shop Now</a>
+        </div>
+        <div class="controls">
+            <button onclick="toggleSound()"><i id="soundIcon" class="fas fa-volume-up"></i></button>
+        </div>
+
+        
+    </div>
+    <div class="category-bar">
+        <ul>
+            <li><a href="#grids1">Smart Phones</a></li>
+            <li><a href="#grids2">Laptops</a></li>
+            <li><a href="#grids3">EarPhones</a></li>
+            
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</br>
+
+    <section id="slogan">
+    <div class="grid-container2">
+        <!-- Experience -->
+        <div class="grid-item2">
+          <h3>Simplify Your Tech Life.</h3>
+          <h3>Connect.</h3>
+          <h3>Create.</h3>
+          <h3>Inspire.</h3>
+          
+        </div>
+        <!-- Education -->
+        <div class="grid-item2">
+          
+          <p>Discover the latest in mobile and computing technology. </p>
+           <p> Elevate your digital experience with our curated selection of phones and laptops. </p>
+           <p> Explore endless possibilities and </p>
+           <p> stay connected wherever you go.</p>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section id="grids1">
+        <h2>Smart Phones</h2>
+        <div class="grid-container">
+            <!-- iPhone 14 Pro -->
+            <div class="item">
+                <img src="images/iphone14_pro.jfif" alt="iPhone 14 Pro Image" class="product-image">
+                <br>
+                <span>iPhone 14 Pro - $10.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('iPhone 14 Pro', 10.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton1" class="addToFavoritesButton" onclick="toggleFavorite(1)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Samsung S23 ULTRA -->
+            <div class="item">
+                <img src="images/samsung_S23_ultra.jfif" alt="Samsung S23 ULTRA Image" class="product-image">
+                <br>
+                <span>Samsung S23 ULTRA - $20.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Samsung S23 ULTRA', 20.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton2" class="addToFavoritesButton" onclick="toggleFavorite(2)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Nokia 12 Max -->
+            <div class="item">
+                <img src="images/nokia.jpeg" alt="Nokia 12 Max Image" class="product-image">
+                <br>
+                <span>Nokia 12 Max - $10.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Nokia 12 Max', 10.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton3" class="addToFavoritesButton" onclick="toggleFavorite(3)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grids2">
+        <h2>Laptops</h2>
+        <div class="grid-container">
+            <!-- Asus i3 -->
+            <div class="item">
+                <img src="images/asus1.jpg" alt="Asus i3 Image" class="product-image">
+                <br>
+                <span>Asus i3 - $20.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Asus i3', 20.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton4" class="addToFavoritesButton" onclick="toggleFavorite(4)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Razer Laptop -->
+            <div class="item">
+                <img src="images/razer.jpg" alt="Razer Image" class="product-image">
+                <br>
+                <span>Razer Laptop - $10.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Razer Laptop', 10.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton5" class="addToFavoritesButton" onclick="toggleFavorite(5)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Lenovo i7 -->
+            <div class="item">
+                <img src="images/lenovo1.jpg" alt="Lenovo i7 Image" class="product-image">
+                <br>
+                <span>Lenovo i7 - $20.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Lenovo i7', 20.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton6" class="addToFavoritesButton" onclick="toggleFavorite(6)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grids3">
+        <h2>Head Phones</h2>
+        <div class="grid-container">
+            <!-- Beat Studio headphone -->
+            <div class="item">
+                <img src="images/beatStudio1.jpg" alt="Beat Studio Image" class="product-image">
+                <br>
+                <span>Beat Studio headphone - $20.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Beat Studio headphone', 20.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton7" class="addToFavoritesButton" onclick="toggleFavorite(7)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Super base headphone -->
+            <div class="item">
+                <img src="images/superBase1.jpg" alt="Super base1 Image" class="product-image">
+                <br>
+                <span>Super base headphone - $10.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Super base headphone', 10.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton8" class="addToFavoritesButton" onclick="toggleFavorite(8)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <!-- Logo headphones -->
+            <div class="item">
+                <img src="images/logo1.jpg" alt="Logo headphone Image" class="product-image">
+                <br>
+                <span>Logo headphones - $20.00</span>
+                <br>
+                <div class="button-container">
+                    <button class="addToCartButton" onclick="addToCart('Logo headphones', 20.00)"><i class="fas fa-cart-plus"></i>   ADD TO CART</button>
+                    <button id="favoriteButton9" class="addToFavoritesButton" onclick="toggleFavorite(9)"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+
+    <div class="cart-container">
+        <div id="cartSummary">
+            <h2><a href="cart.html" class="no-underline">GO TO CART</a></h2>
+            <p>Total Items in Cart: <span id="cartItemCount">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+            // Retrieve cart items from localStorage
+            const storedCart = localStorage.getItem('cart');
+            if (storedCart) {
+                cart = JSON.parse(storedCart);
+                updateCartItemCount(); // Update the cart item count
+            }
+        });
+        </script>
+        
+</body>
+</html>
